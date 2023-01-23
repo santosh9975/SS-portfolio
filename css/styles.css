@@ -1,0 +1,593 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero{
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.6)),url(../Images/bg1.jpg);
+    height:100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(100px);
+    padding: 2% 8%;
+}
+.hero nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.hero ul{
+    list-style: none;
+}
+.hero ul li{
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 15px;
+    font-size: 20px;
+}
+.hero ul li a{
+    text-transform: uppercase;
+}
+.hero .logo{
+    font-size: 45px ;
+    font-family: 'Solitreo', cursive;
+    font-weight: bold;
+    /* font-family: 'Mrs Saint Delafield', cursive; */
+}
+
+nav a:hover{
+    color: turquoise;
+    transition: .4s;
+}
+.content{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+}
+.content h1{
+    font-size: 70px;
+    letter-spacing: 10px;
+    margin: 15px auto;
+}
+.content h3{
+    font-size: 35px;
+    letter-spacing: 5px;
+    text-shadow: 0px 0px 5px rgb(9, 9, 9);
+    color: turquoise;
+    text-align: center;
+}
+.content .icons {
+    text-align: center;
+    
+}
+.content .icons .bi{
+    margin-right: 30px;
+    font-size: 25px;
+    color: turquoise;
+}
+/* about */
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222;
+    text-align: left;
+}
+.about-text{
+    width: 600px;
+    color: #eee;
+    padding: 8% 2%;
+}
+.about-text h1{
+    /* font-family: 'Mrs Saint Delafield', cursive; */
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+.about-text p{
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 25px;
+}
+.about-text a{
+    border: 2px solid transparent ;
+    background-color: turquoise;
+    color: white;
+    padding: 10px 20px ;
+    border-radius: 30px;
+
+}
+.about-text a:hover{
+    background: transparent;
+    transition: 0.4s;
+    border: 2px solid turquoise;
+}
+.about img{
+    width: 400px;
+    height: 500px;
+    margin-top: 20px ;
+    margin-left: 20px ;
+    border-radius: 20px;
+}
+.about img:hover{
+    transform: perspective(1000px) rotatey(0deg);
+}
+/* skils */
+.skils{
+    background-color: #222;
+}
+.card{
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr;
+    padding: 2% 8%;
+    text-align: center;
+}
+.c{
+    margin: 30px;
+    color: white;
+    padding: 30px;
+    box-shadow: 0px 0px 20px turquoise ;
+    border-radius: 10px;
+}
+.c h1{
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+}
+.c p{
+    font-size: 14px;
+    color: peru;
+    margin-bottom: 30px;
+    line-height: 25px;
+    /* letter-spacing: 1px; */
+    text-align: justify;
+}
+.c .bi{
+ font-size: 30px;
+ color: turquoise;
+ margin-bottom: 10px;
+}
+.c a{
+    border: 2px solid turquoise;
+    padding: 10px 30px;
+    border-radius: 30px;
+    margin-bottom: 10px;
+
+}
+.c a:hover{
+    background-color: turquoise;
+    color: black;
+}
+
+/* skill section */
+.skill-section{
+    background-color: #222;
+}
+.skill-heading{
+    color: white;
+    text-align: center;
+    font-size: 35px;
+    padding: 40px;
+}
+.skill-section h1{
+    color: white;
+    text-align: center;
+    padding:50px ;
+    font-size: 35px;
+}
+.skills{
+    margin: auto;
+    color: white;
+    width: 100%;
+    max-width: 650px;
+    padding: 20px;   
+}
+.border{
+    box-shadow:0px 0px 30px #444;
+    padding: 30px;  
+    /* border: 5px solid coral;  */
+    width: 50%;
+    margin: auto;
+}
+
+.bar{
+    background-color: grey;
+    height: 15px;
+    border-radius: 30px;
+
+    
+}
+.skill-name{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.per{
+    background:linear-gradient(90deg, lightskyblue, turquoise ) ;
+    height: 15px;
+    animation: bar 2.5s 1;
+    border-radius: 30px;
+}
+
+@keyframes bar{
+    0%{
+        width:0;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
+/* contact page */
+.contact-me{
+    background-color: #222;
+    padding: 2% 4%;
+}
+.contact-me h1{
+    text-align: center;
+    padding: 2%;
+    color: white;
+    font-size: 35px;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;  
+    width: 50%;
+}
+.contact input,
+.contact textarea{
+    margin-bottom: 20px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid turquoise;  
+    padding: 10px;
+}
+.contact input,
+.contact textarea:focus{
+    outline: none;
+    color: white;
+    font-size: 16px;
+}
+.contact input::placeholder{
+    color: white;
+    font-size:20px;
+}
+.contact textarea::placeholder{
+    color: white;
+    font-size:20px;
+}
+.contact .contact-btn{
+    width: 40%;
+    color: white;
+    font-size: 20px;
+    margin: auto;
+    border: 2px solid turquoise;
+    border-radius: 30px;
+    cursor: pointer;
+    /* display: inline-block; */
+}
+.contact .contact-btn:hover{
+    background-color: turquoise;
+    color: black;
+    
+}
+
+/* medai */
+@media (min-width:0px) and (max-width:500px){
+   .hero{
+    height: 100%;
+   }
+    .hero nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    nav .menu-items{
+        display: none;
+
+    }
+    .hero .logo{
+        font-size: 45px ;
+        font-family: 'Solitreo', cursive;
+        font-weight: bold;
+        /* font-family: 'Mrs Saint Delafield', cursive; */
+        padding-top: 20px;
+    }
+    
+    .content{
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 700px;
+        /* margin: 30% auto; */
+    }
+    .content h1{
+        font-size: 40px;
+        letter-spacing: 5px;
+        margin: 10px auto;
+    }
+    .content .icons .bi{
+        margin-right: 30px;
+        font-size: 15px;
+    }
+/* media about */
+    .about{
+        display: block;
+        
+    }
+    .about-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        color: #eee;
+        padding: 2% 8%;
+        margin: auto;
+    }
+    .about-text h1{
+        font-size: 20px;
+        letter-spacing: 1px;
+    margin-bottom: 20px;
+    text-align: center;
+    }
+    .about img{
+        display: none;
+    }
+    .about-text p{
+    font-size: 15px;
+    letter-spacing: 0px;
+    line-height: 25px;
+    text-align: justify;
+    margin-bottom: 15px;
+    }
+    .about-text a{
+    border: 2px solid transparent ;
+    background-color: turquoise;
+    color: white;
+    padding: 5px 10px ;
+    border-radius: 30px;
+    }
+/* media card */
+    .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2% 8%;
+    text-align: center;
+    }
+    .c{
+    margin: 30px;
+    color: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px turquoise ;
+    border-radius: 20px;
+    }
+    .c h1{
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+
+    }
+    .c p{
+    font-size: 14px;
+    color: peru;
+    margin-bottom: 25px;
+    }
+    .c .bi{
+    font-size: 20px;
+    color: turquoise;
+    margin-bottom: 10px;
+    }
+    .c a{
+    border: 2px solid turquoise;
+    padding: 10px 18px;
+    border-radius: 30px;
+    margin-bottom: 10px;
+    } 
+    /* skill media */
+    .skill-section h1{
+    color: white;
+    text-align: center;
+    padding:40px ;
+    font-size: 25px;
+    }
+    .skills{
+    padding: 10px;   
+    }
+    .border{
+    padding: 20px;  
+    width: 75%;
+    }
+    /* contact */
+    .contact{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;  
+        width: 80%;
+        padding: 20px;
+    }
+    .contact .contact-btn{
+        width: 40%;
+        color: white;
+        font-size: 20px;
+        margin: auto;
+        border: 2px solid turquoise;
+        border-radius: 10px;
+        cursor: pointer;
+        /* padding: 10px; */
+        /* display: inline-block; */
+    }
+
+}
+
+
+
+
+
+/* for tablet */
+@media (min-width:501px) and (max-width:992px){
+    .hero{
+        height: 100%;
+    }
+    .hero nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    nav .menu-items{
+        display: none;
+
+    }
+    .content{
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 700px;
+    }
+    .content h1{
+        font-size: 80px;
+        letter-spacing: 5px;
+        margin: 10px auto;
+    }
+    .content .icons .bi{
+        margin-right: 30px;
+        font-size: 25px;
+    }
+/* media about */
+    .about{
+        display: block;
+        padding: 50px;
+        
+    }
+    .about-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        color: #eee;
+        padding: 2% 8%;
+        margin: auto;
+    }
+    .about-text h1{
+        font-size: 30px;
+        letter-spacing: 2px;
+
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .about img{
+        display: none;
+    }
+    .about-text p{
+    font-size: 25px;
+    letter-spacing: 0px;
+    line-height: 45px;
+    text-align: justify;
+    margin-bottom: 15px;
+    padding: 20px 40px 0;
+    }
+    .about-text a{
+    border: 2px solid transparent ;
+    background-color: turquoise;
+    color: white;
+    padding: 10px 20px ;
+    font-size: 20px;
+    border-radius: 30px;
+    }
+/* media card */
+    .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2% 8%;
+    text-align: center;
+    }
+    .c{
+    margin: 20px auto;
+    color: white;
+    padding: 40px;
+    box-shadow: 0px 0px 10px turquoise ;
+    border-radius: 20px;
+    width: 60%;
+    }
+    .c h1{
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+
+    }
+    .c p{
+    font-size: 18px;
+    color: peru;
+    margin-bottom: 25px;
+    }
+    .c .bi{
+    font-size: 40px;
+    color: turquoise;
+    margin-bottom: 10px;
+    }
+    .c a{
+    border: 2px solid turquoise;
+    padding: 10px 35px;
+    border-radius: 30px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    } 
+    /* skill media */
+    .skill-section h1{
+    color: white;
+    text-align: center;
+    padding:40px ;
+    font-size: 25px;
+    }
+    .skills{
+    padding: 10px;   
+    }
+    .border{
+    padding: 20px;  
+    width: 75%;
+    }
+    /* contact media */
+
+    .cnt input{
+    max-width: 100%;
+    background-color: #222; 
+     margin: 20px auto;
+    display: flex;
+     flex-direction: column;
+    justify-content: center; 
+     align-items: center; 
+     width: 100%;
+    }
+    .cnt .contact-btn{
+        width: 40%;
+        font-size: 20px;
+    }
+    .contact{
+        width: 80%;
+    }
+    
+}

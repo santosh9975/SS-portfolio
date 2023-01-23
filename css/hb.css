@@ -1,0 +1,40 @@
+.hb{
+    border: 2px solid red;
+    position: relative;
+}
+.menu-items{
+    display: none;
+    padding: 30px 60px;
+
+}
+.hb input[type="checkbox"]{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    z-index: 5;
+    opacity: 0;
+}
+.hb input[type="checkbox"]:checked ~ .menu-items{
+    display: block;
+}
+ul li{
+    list-style: none;
+    margin-bottom: 15px;
+}
+.menu-lines{
+    background-color: blue;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 10px;
+    left: 11px;
+    z-index: 2;
+}
+
+.menu-lines .line{
+    height: 2px;
+    width: 20px;
+    color: white;
+}
